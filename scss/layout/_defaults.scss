@@ -1,0 +1,52 @@
+:root {
+    letter-spacing: -0.03em;
+    font-size: 1em;
+    line-height: 1.25;
+}
+
+body {
+    background-image: var(--background-imgTile);
+    color: var(--body-textColor);
+}
+main {
+    section {
+        border: var(--box-borderStyle);
+        border-radius: var(--box-borderRadius);
+        background: var(--box-backgroundColor);
+    }
+
+    a {
+        color: var(--a-textColor);
+    }
+
+    a.visited {
+        color: var(--a-visited-textColor);
+    }
+
+    img.pixel {
+        image-rendering: pixelated;
+        image-rendering: -webkit-optimize-contrast;
+        height: 1.25em;
+        width: auto;
+        display: inline-block;
+    }
+
+    .section-head {
+        padding: 4px 17px;
+        color: var(--aside-headerColor);
+        text-shadow: var(--aside-headerShadow);
+        background: var(--aside-headerBackground);
+        h1 {
+            font-size: 1.3em;
+            margin: 0px;
+        }
+    }
+
+    h2 {
+        font-size: 1.2em;
+    }
+}
+
+ul {
+    list-style: "> ";
+}

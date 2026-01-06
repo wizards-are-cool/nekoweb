@@ -22,7 +22,17 @@
 
 /* Style for your 'Follow on Nekoweb' button (<iframe src="https://nekoweb.org/frame/follow" frameborder="0" width="170" height="28"></iframe>) */
 .follow {
-
+    background-color: #fff;
+    border: 0px;
+    border-radius: 4px;
+    color: #000;
+    padding: 2px 10px;
+    cursor: pointer;
+    font-family: "Atkinson Hyperlegible Mono";
+    font-size: 13px;
+    margin: 0 auto;
+    display: block;
+    letter-spacing: -0.04em;
 }
 
 /* Style for your post box (must start with ".post-box") */

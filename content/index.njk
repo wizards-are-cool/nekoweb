@@ -1,41 +1,50 @@
 ---
-layout: head.njk
 nesting: "../"
-title: Welcome
+title: "Welcome"
 ---
-
-<body class="welcome">
+{% include '_head.njk' %}
+  <body class="welcome">
     <div id="content" class>
-            <div id="theme_toggler"><button><span></span></button></div>
-            <script src="/js/theme_switcher.js"></script>
+        {% include '_theme-toggler.njk' %}
             <main>
-                <img id="wiz" src="/assets/img/crust-wizard-with-wand.gif" alt="crusty wizard gif" title="WIZARDS RULE!!!!"/>
                 <section>
                     <div class="section-head"><h1 style="font-weight: normal">Welcome!</h1></div>
-                    <div class="inner-section"><p><h2>Content Warning</h2> This site and my blog are written for an assumed <i title="i have younger relatives so it leans slightly more G rated in case they pay me a visit">teen and older audience</i>. (No NSFW and mild/minimal swears.)
-                        However, note that I link to websites I don't have control over, and I recommend some media that isn't for kids.
+                    <div class="inner-section" id="content-warning">
+                    <div>
+                        <h2>Content Warning</h2>
+                    <p>This site is written for an assumed <i>teen and older audience</i>. I link to websites I don't have control over, and I recommend some media that isn't for kids.
                         So please keep that in mind.<br><br>This site is forever under construction, and may break at any time. (Don't forget to hard-reload my site!)<br><br>
-                        WARNING: <strong title="I try my best to avoid adding content with flashing lights, but sometimes things break so it's better to be cautious.">This site contains flashing lights.</strong><br><br>
-                        <div id="welcome-buttons">
-                        <img loading="lazy" src="/assets/img/button/emacs.gif" alt="made with GNU emacs" title="Made with GNU Emacs: the right way" class="button"/>
-                        <img loading="lazy" src="/assets/img/button/firefox4.gif" alt="tested on firefox" title="best viewed on most firefox (145+) based browsers" class="button"/>
-                        <img loading="lazy" src="/assets/img/button/best_chrome.gif" alt="best viewed on chrome" title="best viewed on most chromium (142+) based browsers" class="button"/>
-                        <img loading="lazy" src="/assets/img/button/bestviewedcomp.gif" alt="best viewed on a computer" title="best viewed with a computer" class="button"/>
-                        <img loading="lazy" alt="w3c bad html" title="w3m bad html" src="/assets/img/button/valid-bad.gif" class="button"/>
-                        </div>
+                        WARNING: <strong>This site may contain flashing lights.</strong><br><br>
                      </p></div>
-
+                    <div class="content-warning-gif"><img src="/assets/img/Censor_14b.gif" style="margin-right:1em;image-rendering:pixelated;display=inline-block" alt="14+ content warning" width="145" height="100"></div>
+                    </div>
                 </section>
                 <section>
                     <div class="section-head"><h1>Menu</h1></div>
                     <ul class="menu_list">
                         <li><a href="/home"><strong>enter</strong></a></li>
-                        <li><a href="https://netherpi.net">return to blog</a></li>
                         <li><a href="https://nekoweb.org">return to nekoweb</a></li>
                     </ul>
                 </section>
                 <section>
                     <div class="section-head"><h1>Webrings</h1></div>
+                    <div class="inner-section" id="webrings">
+                        <div id='gfdkris'>
+                            <script type="text/javascript" src="https://fabstarotcorner.neocities.org/webring/onionring-variables.js"></script>
+                            <script type="text/javascript" src="https://fabstarotcorner.neocities.org/webring/onionring-widget.js"></script>
+
+                        </div>
+                        <div id='ssgring'>
+                            <script src="https://jbc.lol/webrings/ssgring/pmoring.js"></script>
+                        </div>
+                        <div id='nekowebring'>
+                            <script type="text/javascript" src="https://webring.nekoweb.org/onionring-variables.js"></script>
+                            <script type="text/javascript" src="https://webring.nekoweb.org/onionring-widget.js"></script>
+                        </div>
+                        <div id='noai'>
+                             <a href="https://baccyflap.com/noai/?prv&s=npi" target="_top"><img src="https://baccyflap.com/noai/valywidget0.gif" alt="previous no ai webring site" title="previous no ai webring site"></a><a href="https://baccyflap.com/noai" target="_blank"><img src="https://baccyflap.com/noai/valywidget1.gif" alt="no ai webring" title="no ai webring"></a><a href="https://baccyflap.com/noai/?rnd" target="_top"><img src="https://baccyflap.com/noai/valywidget2.gif" alt="random no ai webring site" title="random no ai webring site"></a><a href="https://baccyflap.com/noai/?nxt&s=npi" target="_top"><img src="https://baccyflap.com/noai/valywidget3.gif" alt="next no ai webring site" title="next no ai webring site"></a>
+                        </div>
+                    </div>
                 </section>
             </main>
     </div>

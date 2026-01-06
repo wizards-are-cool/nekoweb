@@ -1,0 +1,88 @@
+aside.aside-left {
+    border: 2px;
+    color: var(--body-textColor);
+}
+
+.aside-box {
+    background-color: var(--box-backgroundColor);
+    border: var(--box-borderStyle);
+    border-radius: var(--box-borderRadius);
+    display: grid;
+    #status {
+        justify-self: center;
+    }
+}
+
+ul.menu-list {
+    list-style: "> ";
+    color: var(--a-textColor);
+}
+
+ul.menu-list a {
+    text-decoration: none;
+    color: var(--a-textColor);
+}
+
+ul.menu-list a:hover,
+ul.menu-list a.active {
+    color: var(--box-backgroundColor);
+    background-color: var(--a-textColor);
+    font-weight: bold;
+}
+
+#statuscafe {
+    padding: 16px;
+    align-self: center;
+    font-size: 0.9em;
+}
+
+.my-buttons {
+    padding: 16px;
+    text-align: center;
+    textarea {
+        width: 125px;
+        height: 30px;
+        font-size: 10px;
+        text-align: left;
+        border: 1px solid var(--border-color);
+        color: var(--body-textColor);
+        background: var(--primary-backgroundColor);
+    }
+    img:hover {
+        transform: scale(1.05);
+    }
+    div {
+        margin: 5px;
+    }
+}
+
+#statuscafe-username {
+    font-weight: bold;
+    margin-botton: 0.5em;
+    a {
+        color: var(--a-textColor);
+        text-decoration: none;
+    }
+    a:hover {
+        text-decoration: underline;
+    }
+}
+
+#statuscafe-content {
+    margin: 0 1em 0.5em 1em;
+}
+
+.aside-box iframe {
+    justify-self: center;
+    padding: 16px;
+}
+
+.aside-header {
+    padding: 4px 17px;
+    font-size: 1.3em;
+    font-weight: bolder;
+    color: var(--aside-headerColor);
+    text-shadow: var(--aside-headerShadow);
+    background: var(--aside-headerBackground);
+    justify-content: center;
+}

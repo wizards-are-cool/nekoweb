@@ -1,0 +1,7 @@
+@mixin pixel-img {
+    image-rendering: pixelated;
+    image-rendering: -webkit-optimize-contrast;
+    height: 1.25em;
+    width: auto;
+    display: inline-block;
+}

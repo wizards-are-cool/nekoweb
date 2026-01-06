@@ -10,6 +10,7 @@ export const config = {
 };
 
 export default function (eleventyConfig) {
+    eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
     eleventyConfig.addTransform("htmlmin", function (content) {
         // Ignore .gitignore
         eleventyConfig.setUseGitIgnore(false);

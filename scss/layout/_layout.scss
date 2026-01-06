@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+    body {
+        min-height: 100vh;
+        margin: 0;
+        position: relative;
+        display: grid;
+
+        #content {
+            display: grid;
+            width: 95%;
+            grid-template:
+                "header header header" auto
+                "aside-left main main" auto
+                "footer footer footer" auto
+                / 220px auto 220px;
+            justify-self: center;
+            header {
+                grid-area: header;
+                text-align: center;
+                height: 50px;
+                margin-bottom: 50px;
+            }
+            aside.aside-left {
+                grid-area: aside-left;
+                padding: 5px;
+                .aside-box {
+                    margin-bottom: 10px;
+                }
+            }
+            main {
+                grid-area: main;
+                padding: 5px;
+                display: flex;
+                flex-direction: column;
+                section {
+                    margin-bottom: 10px;
+                }
+                .inner-section {
+                    padding: 4px 17px;
+                }
+            }
+        }
+    }
+}
