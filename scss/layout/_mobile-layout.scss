@@ -1,0 +1,40 @@
+@media (width <= 767px) {
+    #content {
+        grid-template:
+            "header" auto
+            "aside" auto
+            "main" auto
+            "footer" auto;
+    }
+    #theme-toggler {
+        position: absolute;
+        top: 7px;
+        left: 7px;
+    }
+    #theme-toggler button {
+        width: 36px;
+        height: 36px;
+    }
+    #theme-toggler span.butt-text {
+        visibility: hidden;
+    }
+    aside.aside-left {
+        font-size: 15px;
+    }
+    #desktop-aside {
+        visibility: hidden;
+    }
+    .aside-mobile {
+        background-color: var(--box-backgroundColor);
+        border: var(--box-borderStyle);
+        border-radius: var(--box-borderRadius);
+        grid-area: aside;
+    }
+    header {
+        text-align: center;
+        grid-area: header;
+        h1 {
+            font-size: 2em;
+        }
+    }
+}

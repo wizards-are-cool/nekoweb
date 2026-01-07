@@ -6,11 +6,11 @@ let theme1 = localStorage.getItem("theme");
 if (theme1 === "dark") {
     if (theme_sw_butt)
         theme_sw_butt.querySelector("span").innerHTML =
-            "<img class='pixel_but' src='/assets/img/sun.gif' alt='sun'/><span>switch theme</span>";
+            "<img class='pixel_but' src='/assets/img/sun.gif' alt='sun'/><span class='butt-text'>change theme</span>";
 } else {
     if (theme_sw_butt)
         theme_sw_butt.querySelector("span").innerHTML =
-            "<img class='pixel' src='/assets/img/moon.gif' alt='moon'/> <span>switch theme</span>";
+            "<img class='pixel' src='/assets/img/moon.gif' alt='moon'/> <span class='butt-text'>change theme</span>";
 }
 
 theme_sw_butt.addEventListener("click", () => {
@@ -19,12 +19,12 @@ theme_sw_butt.addEventListener("click", () => {
         setDarkTheme();
         if (theme_sw_butt)
             theme_sw_butt.querySelector("span").innerHTML =
-                "<img class='pixel' src='/assets/img/sun.gif' alt='sun'/> <span class='butt-text'>switch theme</span>";
+                "<img class='pixel' src='/assets/img/sun.gif' alt='sun'/> <span class='butt-text'>change theme</span>";
     } else {
         setLightTheme();
         if (theme_sw_butt)
             theme_sw_butt.querySelector("span").innerHTML =
-                "<img class='pixel' src='/assets/img/moon.gif' alt='moon'/> <span class='butt-text'>switch theme</span>";
+                "<img class='pixel' src='/assets/img/moon.gif' alt='moon'/> <span class='butt-text'>change theme</span>";
     }
 });
 function setDarkTheme() {

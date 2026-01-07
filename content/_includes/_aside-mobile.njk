@@ -1,0 +1,69 @@
+<div class="aside-mobile">
+<aside class="aside-left">
+<details id="aside-mobile">
+
+    <summary>Open menu</summary>
+  <div class="aside-box">
+    <nav class="menu">
+      <div class="aside-header">Navigation</div>
+      <ul class="menu-list">
+                                 {% for item in collections.menuItems | sort(false, false, 'data.order') %}
+                            <li><a href="{{ item.data.permalink }}" {% if page.url == item.url  %} aria-current="page" class="active" {% endif %}>{{ item.data.title | slugify }}</a></li>
+                            {% endfor %}
+      </ul>
+    </nav>
+  </div>
+  <div class="aside-box">
+    <div class="aside-header">Follow Me!</div>
+    <iframe
+      src="https://nekoweb.org/frame/follow"
+      frameborder="0"
+      width="170"
+      height="28"
+    ></iframe>
+  </div>
+  <div class="aside-box" id="status">
+    <div class="aside-header">My Status</div>
+    <div id="statuscafe">
+      <div id="statuscafe-username"></div>
+      <div id="statuscafe-content"></div>
+    </div>
+    <script
+      src="https://status.cafe/current-status.js?name=netherpi"
+      defer
+    ></script>
+  </div>
+  <div class="aside-box">
+    <div class="aside-header">My Buttons</div>
+    <div class="my-buttons">
+      <div>
+        <a href="https://netherpi.net" target="_blank"
+          ><img
+            alt="netherpi.net"
+            src="/assets/img/button/mine/netherpi-dark.gif"
+            style="image-rendering: pixelated"
+            width="88"
+            height="31"
+        /></a>
+        <textarea>
+<a href="https://netherpi.net" target="_blank"><img alt="netherpi.net" src="YOUR-PATH-TO/netherpi-dark.gif" style="image-rendering:pixelated" width="88" height="31"></a></textarea
+        >
+      </div>
+      <div>
+        <a href="https://netherpi.net" target="_blank"
+          ><img
+            alt="netherpi.net"
+            src="/assets/img/button/mine/netherpi-light.gif"
+            style="image-rendering: pixelated"
+            width="88"
+            height="31"
+        /></a>
+        <textarea>
+<a href="https://netherpi.net" target="_blank"><img alt="netherpi.net" src="YOUR-PATH-TO/netherpi-light.gif" style="image-rendering:pixelated" width="88" height="31"></a></textarea
+        >
+      </div>
+    </div>
+  </div>
+</details>
+</aside>
+</div>

@@ -6,21 +6,29 @@
         position: relative;
         display: grid;
 
-        #content {
-            display: grid;
-            width: 95%;
-            grid-template:
-                "header header header" auto
-                "aside-left main main" auto
-                "footer footer footer" auto
-                / 220px auto 220px;
-            justify-self: center;
+        @media (width > 767px) {
+            #content {
+                grid-template:
+                    "header header header" auto
+                    "aside-left main main" auto
+                    "footer footer footer" auto
+                    / 220px auto 220px;
+            }
             header {
                 grid-area: header;
                 text-align: center;
                 height: 50px;
                 margin-bottom: 50px;
             }
+
+            #aside-mobile {
+                visibility: hidden;
+            }
+        }
+        #content {
+            width: 95%;
+            display: grid;
+            justify-self: center;
             aside.aside-left {
                 grid-area: aside-left;
                 padding: 5px;
