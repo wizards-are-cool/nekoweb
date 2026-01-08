@@ -6,7 +6,7 @@
         position: relative;
         display: grid;
 
-        @media (width > 767px) {
+        @media (width >= 768px) {
             #content {
                 grid-template:
                     "header header header" auto
