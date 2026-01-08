@@ -1,44 +1,24 @@
-/* 
+/* Must start with ".site-box". Change how your website will appear on main nekoweb site: https://nekoweb.org/assets/siteboxes.png */
+/*!@nkb "domain":"jbc.lol","rss":"","overflow":false,"readonly":false */
+/*
     Don't use this file to edit your site style! Create a different CSS file for that.
     This file defines how custom elements (like sitebox) will look like.
-    Setting CSS that breaks main nekoweb site on purpose is prohibited and may result in ban and site deletion! 
+    Setting CSS that breaks main nekoweb site on purpose is prohibited and may result in ban and site deletion!
 */
 
-/* Must start with ".site-box". Change how your website will appear on main nekoweb site: https://nekoweb.org/assets/siteboxes.png */
+/* Must start with ".site-box". Change how your website will appear on main nekoweb site: https://lune.dimden.dev/405a44b7e5.png */
 .site-box {
     text-align: center;
-    background-color: #000000;
     border: 3px ridge #a6a6a6;
+    background-image: url(https://netherpi.nekoweb.org/assets/img/elements/dark-backgroundTile.png); /* Only nekoweb URLs allowed, use full url to your site like https://example.nekoweb.org/images/coolbg.png */
     background-repeat: no-repeat;
-    color: #b08271;
     font-size: 12px;
 }
 .site-box > a > p {
-    color: var(--darkbrown);
-    font-weight: bold;
+    visibility: hidden;
 }
 .site-box > a > span {
-    color: var(--darkbrown);
-}
-
-/* Style for your 'Follow on Nekoweb' button (<iframe src="https://nekoweb.org/frame/follow" frameborder="0" width="170" height="28"></iframe>) */
-.follow {
-    background-color: #bbd8bb;
-    border: 1px solid #95b695;
-    border-radius: 2px;
-    color: #2c462c;
-    padding: 2px 10px;
-    cursor: pointer;
-    font-family: monospace;
-    font-size: 13px;
-    margin: 0 auto;
-    display: block;
-}
-.following {
-    color: #2c462c;
-    cursor: pointer;
-    font-family: monospace;
-    font-size: 13px;
+    visibility: hidden;
 }
 
 /* Style for your post box (must start with ".post-box") */
@@ -56,4 +36,23 @@
     font-weight: bold;
     margin-top: 10px;
     margin-bottom: 0px;
+}
+/* Style for your 'Follow on Nekoweb' button (<iframe src="https://nekoweb.org/frame/follow" frameborder="0" width="170" height="28"></iframe>) */
+.follow {
+    background-color: #bbd8bb;
+    border: 1px solid #95b695;
+    border-radius: 2px;
+    color: #2c462c;
+    padding: 2px 10px;
+    cursor: pointer;
+    font-family: "monospace";
+    font-size: 13px;
+    margin: 0 auto;
+    display: block;
+}
+.following {
+    color: #2c462c;
+    cursor: pointer;
+    font-family: monospace;
+    font-size: 13px;
 }

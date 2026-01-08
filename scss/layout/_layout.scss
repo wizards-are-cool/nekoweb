@@ -27,7 +27,14 @@
             aside.aside-left {
                 padding: 5px;
             }
+            .side-by-side {
+                display: flex;
+                section.left {
+                    margin-right: 10px;
+                }
+            }
         }
+
         #content {
             width: 95%;
             display: grid;

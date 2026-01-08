@@ -1,28 +1,7 @@
-html[data-theme="light"] {
-    --primary-color: #403347;
-    --secondary-color: #4d3073;
-    --primary-backgroundColor: #9fc8ff;
-    --secondary-backgroundColor: #d1e5ff;
-    --border-color: var(--secondary-backgroundColor);
-    --a-textColor: var(--secondary-color);
-    --a-visited-textColor: var(--secondary-color);
-    --aside-headerBackground: var(--secondary-backgroundColor);
-    --aside-headerColor: var(--secondary-color);
-    --aside-headerShadow: var(--secondary-color) 0px 0px 0px; /* invisible */
-    --background-color: var(--primary-backgroundColor);
-    --background-imgTile: url("/assets/img/light-backgroundTile.gif");
-    --body-textColor: var(--primary-color);
-    --box-backgroundColor: var(--primary-backgroundColor);
-    --box-borderStyle: 3px solid var(--border-color);
-    --box-borderRadius: 8px;
-    --button-textColor: var(--secondary-color);
-    --button-BackgroundColor: var(--primary-backgroundColor);
-    --button-borderStyle: var(--box-borderStyle);
-    --button-borderRadius: var(--box-borderRadius);
-}
 html[data-theme="dark"] {
     --primary-color: #ffffff;
     --secondary-color: #33d17a;
+    --secondary-headerColor: 8f8bb9;
     --primary-backgroundColor: #000000;
     --secondary-backgroundColor: #1d211f;
     --border-color: #a6a6a6;
@@ -39,6 +18,30 @@ html[data-theme="dark"] {
     --box-borderStyle: 3px ridge var(--border-color);
     --box-radius: 0px;
     --button-textColor: var(--primary-color);
+    --button-BackgroundColor: var(--primary-backgroundColor);
+    --button-borderStyle: var(--box-borderStyle);
+    --button-borderRadius: var(--box-borderRadius);
+}
+html[data-theme="light"] {
+    --primary-color: #403347;
+    --secondary-headerColor: #4d3073;
+    --secondary-color: #4d3073;
+    --secondary-header-color: var(--secondary-color);
+    --primary-backgroundColor: #9fc8ff;
+    --secondary-backgroundColor: #d1e5ff;
+    --border-color: var(--secondary-backgroundColor);
+    --a-textColor: var(--secondary-color);
+    --a-visited-textColor: var(--secondary-color);
+    --aside-headerBackground: var(--secondary-backgroundColor);
+    --aside-headerColor: var(--secondary-color);
+    --aside-headerShadow: var(--secondary-color) 0px 0px 0px; /* invisible */
+    --background-color: var(--primary-backgroundColor);
+    --background-imgTile: url("/assets/img/light-backgroundTile.gif");
+    --body-textColor: var(--primary-color);
+    --box-backgroundColor: var(--primary-backgroundColor);
+    --box-borderStyle: 3px solid var(--border-color);
+    --box-borderRadius: 8px;
+    --button-textColor: var(--secondary-color);
     --button-BackgroundColor: var(--primary-backgroundColor);
     --button-borderStyle: var(--box-borderStyle);
     --button-borderRadius: var(--box-borderRadius);
