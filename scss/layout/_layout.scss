@@ -24,6 +24,9 @@
             #aside-mobile {
                 visibility: hidden;
             }
+            aside.aside-left {
+                padding: 5px;
+            }
         }
         #content {
             width: 95%;
@@ -31,7 +34,6 @@
             justify-self: center;
             aside.aside-left {
                 grid-area: aside-left;
-                padding: 5px;
                 .aside-box {
                     margin-bottom: 10px;
                 }

@@ -29,15 +29,15 @@
     color: #2c462c;
     padding: 2px 10px;
     cursor: pointer;
-    font-family: "MS UI Gothic", Verdana, sans-serif;
+    font-family: "monospace";
     font-size: 13px;
     margin: 0 auto;
     display: block;
 }
-.followed {
+.following {
     color: #2c462c;
     cursor: pointer;
-    font-family: "MS UI Gothic", Verdana, sans-serif;
+    font-family: "monospace";
     font-size: 13px;
 }
 
