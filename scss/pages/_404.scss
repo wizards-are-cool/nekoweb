@@ -1,0 +1,29 @@
+.four-o-four {
+    #content {
+        section {
+            margin: 1em;
+            grid-area: header;
+            border: var(--box-borderStyle);
+            border-radius: var(--box-borderRadius);
+            background: var(--box-backgroundColor);
+        }
+        .section-head {
+            padding: 4px 17px;
+            color: var(--aside-headerColor);
+            text-shadow: var(--aside-headerShadow);
+            background: var(--aside-headerBackground);
+            h1 {
+                margin: 0px;
+            }
+        }
+
+        .inner-section {
+            padding: 4px 17px;
+            img#tenna {
+                display: inline-block;
+                width: 1em;
+                height: auto;
+            }
+        }
+    }
+}
