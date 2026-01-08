@@ -7,22 +7,21 @@ tags: menuItems
 title: "Home"
 bodyClass: "home"
 ---
-
-<section>
-    <div class="section-head"><h1>I have a website!</h1></div>
-    <div class="inner-section">
-        <div class="mini-about">
-            <img class="smile-tony" alt="smile tony" style="width:100px;height:100px;image-rendering:pixelated;display=inline-block" loading="lazy" src="/assets/img/smile-tony.webp">
-            <p>
-                Hello, I'm <span title='Pronounced nether pie'>netherpi</span>! This is my personal corner of the internet where I dump whatever I'm currently into.
-                You can expect a lot of posts about tech, art, video games, and engineering.
-                This site is an eternal work-in-progress, things will break. Also, this site is best viewed on desktop.
-                There is a mobile layout, however it kinda sucks and I don't recommend it if you have access to a desktop.
-            </p>
+    <section>
+        <div class="section-head"><h1>I have a website!</h1></div>
+        <div class="inner-section">
+            <div class="mini-about">
+                <img class="smile-tony" alt="smile tony" style="width:100px;height:100px;image-rendering:pixelated;display=inline-block" loading="lazy" src="/assets/img/smile-tony.webp">
+                <p>
+                    Hello, I'm <span title='Pronounced nether pie'>netherpi</span>! This is my personal corner of the internet where I dump whatever I'm currently into.
+                    You can expect a lot of posts about tech, art, video games, and engineering.
+                    This site is an eternal work-in-progress, things will break.
+                </p>
+            </div>
         </div>
-    </div>
-</section>
-<section>
+    </section>
+<div class="side-by-side">
+<section class="left">
 <div class="section-head"><h1>Where to?</h1></div>
     <div class="inner-section">
         <p>Use the sidebar (or the top menu on mobile) to navigate. Don't know where to go first? May I suggest:</p>
@@ -33,4 +32,11 @@ bodyClass: "home"
         </ul>
     </div>
 </section>
+    <section class="status">
+        <div class="section-head"><h1>My status</h1></div>
+        <div class="inner-section">
+            <div id="statuscafe"><div id="statuscafe-username"></div><div id="statuscafe-content"></div></div><script src="https://status.cafe/current-status.js?name=netherpi" defer></script>
+        </div>
+    </section>
 
+</div>

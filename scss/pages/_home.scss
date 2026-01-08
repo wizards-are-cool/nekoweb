@@ -8,3 +8,11 @@ img.smile-tony {
 ul.suggestions {
     color: var(--a-textColor);
 }
+
+@media (width >= 768px) {
+    section.status {
+        width: 30em;
+        .inner-section {
+        }
+    }
+}

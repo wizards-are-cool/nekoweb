@@ -57,22 +57,6 @@ ul.menu-list a.active {
     }
 }
 
-#statuscafe-username {
-    font-weight: bold;
-    margin-botton: 0.5em;
-    a {
-        color: var(--a-textColor);
-        text-decoration: none;
-    }
-    a:hover {
-        text-decoration: underline;
-    }
-}
-
-#statuscafe-content {
-    margin: 0 1em 0.5em 1em;
-}
-
 .aside-box iframe {
     justify-self: center;
     padding: 16px;
