@@ -3,16 +3,17 @@ aside.aside-left {
     color: var(--body-textColor);
 }
 
-.aside-box {
-    background-color: var(--box-backgroundColor);
-    border: var(--box-borderStyle);
-    border-radius: var(--box-borderRadius);
-    display: grid;
-    #status {
-        justify-self: center;
+@media (width > 767px) {
+    .aside-box {
+        background-color: var(--box-backgroundColor);
+        border: var(--box-borderStyle);
+        border-radius: var(--box-borderRadius);
+        display: grid;
+        #status {
+            justify-self: center;
+        }
     }
 }
-
 ul.menu-list {
     list-style: "> ";
     color: var(--a-textColor);
