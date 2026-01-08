@@ -10,13 +10,15 @@
 .site-box {
     text-align: center;
     border: 3px ridge #a6a6a6;
-    background-image: url("https://netherpi.nekoweb.org/assets/img/elements/dark-backgroundTile.png"); /* Only nekoweb URLs allowed, use full url to your site like https://example.nekoweb.org/images/coolbg.png */
-    background-repeat: no-repeat;
+    background: #000000;
     font-size: 12px;
 }
 .site-box > a > p {
+    font-family: monospace;
+    color: #33da17a;
 }
 .site-box > a > span {
+    visibility: hidden;
 }
 
 /* Style for your post box (must start with ".post-box") */
