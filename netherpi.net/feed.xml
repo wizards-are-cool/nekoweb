@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+  <title>netherpi dot net</title>
+  <subtitle>A blog about technology, video games, and a lot of other things too</subtitle>
+  <link href="https://netherpi.net/feed.xml" rel="self" />
+  <link href="https://netherpi.net/" />
+  <updated>2026-02-08T18:42:12Z</updated>
+  <id>https://netherpi.net/</id>
+  <author>
+    <name>netherpi</name>
+  </author>
+</feed>

@@ -22,6 +22,7 @@ import fs from 'fs';
 
 import Image from "@11ty/eleventy-img";
 
+import { feedPlugin } from "@11ty/eleventy-plugin-rss";
 
 export default function (eleventyConfig) {
   eleventyConfig.setUseGitIgnore(false);
@@ -97,6 +98,8 @@ export default function (eleventyConfig) {
     return content;
   });
 
+
+  // SHORTCODES
   eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
 
 
@@ -115,7 +118,7 @@ export default function (eleventyConfig) {
       }
     });
   });
-
+  
   const inputFile = './main.css';
   const input = fs.readFileSync(inputFile, 'utf8');
   const output = new CleanCSS().minify(input);
@@ -124,6 +127,24 @@ export default function (eleventyConfig) {
     if (err) return console.log('Error minifying main.css' + err);
     //success
   });
+	eleventyConfig.addPlugin(feedPlugin, {
+		type: "atom", // or "rss", "json"
+		outputPath: "/feed.xml",
+		collection: {
+			name: "posts", // iterate over `collections.posts`
+			limit: 10,     // 0 means no limit
+		},
+		metadata: {
+			language: "en",
+			title: "netherpi dot net",
+			subtitle: "A blog about technology, video games, and a lot of other things too",
+			base: "https://netherpi.net/",
+			author: {
+				name: "netherpi",
+				email: "", // Optional
+			}
+		}
+	});
 };
 
 // Folders
