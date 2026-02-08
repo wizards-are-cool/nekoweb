@@ -14,6 +14,10 @@ order: 100
 
 Welcome, I'm netherpi. I like to write about technology, video games, and a lot of other things too. :mage_man: :sparkles: 
 
+Follow me on Nekoweb:
+<iframe src="https://nekoweb.org/frame/follow" frameborder="0" width="170" height="28"></iframe>
+
+
 (Note: this site is for a 13+ audience.)
 
 <!--
