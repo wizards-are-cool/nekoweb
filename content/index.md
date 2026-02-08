@@ -10,10 +10,11 @@ tags: menuItems
 order: 100
 ---
 
-Welcome, I'm netherpi. I like to write about technology, video games, and a lot of other things too. :mage_man: :sparkles:
+# Home
 
+Welcome, I'm netherpi. I like to write about technology, video games, and a lot of other things too. :mage_man: :sparkles: 
 
-(Note: this site is 14+.)
+(Note: this site is for a 13+ audience.)
 
 <!--
 start test
@@ -268,13 +269,20 @@ It converts "HTML", but keep intact partial entries like "xxxHTMLyyy" and so on.
 end test
 -->
 
-# Recent Posts
-<!-- TODO ADD AUTOMATIC RECENT POST FILTER THING AAAA -->
+## Recent Posts
+Under Construction
 
-# Webrings
+## Webrings
 
 <div class="webrings">
     {% include 'components/_noai.html' %}
     {% include 'components/_tvtime.html' %}
     {% include 'components/_ssg.html' %}
+</div>
+
+## Site Buttons
+
+These are my old buttons: 
+<div class="siteButtons">
+  {% include 'components/_oldButtons.html' %}
 </div>

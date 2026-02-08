@@ -291,7 +291,6 @@ section.footnotes {
     line-height: 1;
 }
 
-
 /* webrings */
 
 .webrings {
@@ -310,6 +309,12 @@ section.footnotes {
         visibility: hidden;
         height: 0;
     }
+}
+
+/* site buttons */
+
+.siteButtons {
+    text-align: center;
 }
 
 /* Guestbook */
