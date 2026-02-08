@@ -315,6 +315,7 @@ section.footnotes {
 
 .siteButtons {
     text-align: center;
+    image-rendering: pixelated;
 }
 
 /* Guestbook */
