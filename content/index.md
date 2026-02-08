@@ -3,8 +3,8 @@ layout: base.njk
 title: "Home"
 permalink: "/"
 isHome: true
-hasCode: true
-hasMath: true
+hasCode: false
+hasMath: false
 noSEO: false
 tags: menuItems
 order: 100
