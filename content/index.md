@@ -12,6 +12,8 @@ order: 100
 
 # Home
 
+{% include 'components/_statuscafe.html' %}
+
 Welcome, I'm netherpi. I like to write about technology, video games, and a lot of other things too. I'm currently an engineering student, so I can't update the site that often. ==(Note: this site is for a 14+ audience.)==
 
 ## Recent Posts
