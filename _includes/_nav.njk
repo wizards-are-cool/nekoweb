@@ -1,0 +1,6 @@
+        <ul class="menu">
+            {% for item in collections.menuItems | sort(false, false, 'data.order') %}
+                <li><a href="{{ item.data.permalink }}" {% if page.url == item.url  %} aria-current="page" class="active" {% endif %}>{{ item.data.title | slugify }}</a></li>
+            {% endfor %}
+            <hr class="nav"/>
+        </ul>

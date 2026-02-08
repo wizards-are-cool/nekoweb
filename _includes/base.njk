@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html prefix="og: https://ogp.me/website#" lang="en">
+
+<head>
+    {% include '_head.njk' %}
+</head>
+<body>
+    <!-- prevent the dreaded FOUC in firefox -->
+    <script>0</script>
+    <nav>
+        {% include '_nav.njk' %}
+    </nav>
+    <main>
+        {% if hasMath %}
+            {{ content | latex | safe }}
+        {% else %}
+            {{content | safe }}
+        {% endif %}    
+    </main>
+    <hr class="nav"/>
+        <footer role="contentinfo">
+            {% include '_footer.njk' %}
+        </footer>
+    </body>
+
+</html>

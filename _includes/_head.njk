@@ -1,0 +1,40 @@
+<!-- FOUC prevention -->
+<style>html{visibility: hidden;opacity:0;}</style>
+
+<!-- metadata for search engines -->
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width" />
+
+{% if not noSEO %}
+<meta name="author" content="netherpi" />
+<meta name="description" content="{{ description or 'Welcome to netherpi.net: a blog about cool tech I like.' }}" />
+{% endif %}
+
+<!-- site lore -->
+<meta name="generator" content="11ty" />
+<meta name="host" content="nekoweb" />
+
+<title>{{ title or 'netherpi.net' }}</title>
+
+
+{% if hasCode %}
+<link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet" />
+{% endif %}
+{% if hasMath %}
+<link rel="stylesheet" href="https://unpkg.com/katex@latest/dist/katex.min.css" />
+{% endif %}
+
+{% if isHome %}
+<link rel="stylesheet" href="https://thegreenroom.neocities.org/webrings/tvtimewebring/onionring.css" />
+<link rel="preload" href="https://baccyflap.com/noai/txtwidget-light.gif" as="image" type="image/gif" />
+{% endif %}
+
+<link rel="preload" href="font/AtkinsonHyperlegibleNext-Regular.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="font/AtkinsonHyperlegibleNext-Italic.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="font/AtkinsonHyperlegibleMono-ExtraLight.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="font/AtkinsonHyperlegibleMono-ExtraLightItalic.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="font/AtkinsonHyperlegibleNext-ExtraBold.woff2" as="font" type="font/woff2" crossorigin>
+
+<link rel="preload" as="style" href="/css/style.css" />
+<link rel="stylesheet" href="/css/style.css" />

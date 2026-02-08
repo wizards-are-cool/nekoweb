@@ -1,0 +1,30 @@
+{
+  "name": "nekoweb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.2",
+    "@11ty/eleventy-img": "^6.0.4",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.2",
+    "clean-css": "^5.3.3",
+    "fs": "^0.0.1-security",
+    "html-minifier-terser": "^7.2.0",
+    "katex": "^0.16.28",
+    "markdown-it-abbr": "^2.0.0",
+    "markdown-it-deflist": "^3.0.0",
+    "markdown-it-emoji": "^3.0.0",
+    "markdown-it-emoji-customizer": "github:actuallysomecat/markdown-it-emoji-customizer",
+    "markdown-it-footnote": "^4.0.0",
+    "markdown-it-mark": "^4.0.0",
+    "markdown-it-sub": "^2.0.0",
+    "markdown-it-sup": "^2.0.0"
+  },
+  "scripts": {
+    "watch": "npx @11ty/eleventy --serve --watch --incremental"
+  }
+}

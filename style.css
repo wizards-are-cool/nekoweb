@@ -1,0 +1,325 @@
+/* FONT FAMILY */
+
+@font-face {
+    font-family: 'Atkinson Hyperlegible Next';
+    src: url('/font/AtkinsonHyperlegibleNext-Regular.woff2') format('woff2'),
+        url('/font/AtkinsonHyperlegibleNext-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Atkinson Hyperlegible Next Italic';
+    src: url('/font/AtkinsonHyperlegibleNext-Italic.woff2') format('woff2'),
+        url('/font/AtkinsonHyperlegibleNext-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Atkinson Hyperlegible Mono ExtraLight';
+    src: url('/font/AtkinsonHyperlegibleMono-ExtraLight.woff2') format('woff2'),
+        url('/font/AtkinsonHyperlegibleMono-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Atkinson Hyperlegible Mono ExtraLightItalic';
+    src: url('/font/AtkinsonHyperlegibleMono-ExtraLightItalic.woff2') format('woff2'),
+        url('/font/AtkinsonHyperlegibleMono-ExtraLightItalic.woff') format('woff');
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Atkinson Hyperlegible Next ExtraBold';
+    src: url('/font/AtkinsonHyperlegibleNext-ExtraBold.woff2') format('woff2'),
+        url('/font/AtkinsonHyperlegibleNext-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+/* COLOR PALETTE */
+/* Tweaked Gruvbox Palette to be compliant with AAA enhanced ratio.  */
+
+/* light mode */
+:root {
+    --primaryBackground: #FBF1C7;
+    --primaryText: #282828;
+    --separatorLine: #928374;
+    --nav: #8B2D00;
+    --a: #076678;
+    --aVisited: #7E3663;
+    --markBackground: #FABD2F50;
+    --h1: #CB2922;
+    --h2: #AF3A03;
+    --h3: #B57614;
+    --h4: #79740E;
+    --h5: #076678;
+    --h6: #8F3F71;
+    --blockquoteBackground: #ebdbb250;
+    --preBackground: #1D2021;
+    --preText: #f8f8f2
+    
+}
+
+/* dark mode */
+@media(prefers-color-scheme: dark) {
+    :root {
+        --primaryBackground: #282828;
+        --primaryText: #FBF1C7;
+        --separatorLine: #403D3C;
+        --nav: #ED6A1D;
+        --a: #9bf9ff;
+        --aVisited: #ff9cc8;
+        --markBackground: #B5761450;
+        --h1: #FF5946;
+        --h2: #ED6A1D;
+        --h3: #FABD2F;
+        --h4: #B8BB26;
+        --h5: #5ba7aa;
+        ;
+        --h6: #ff9cc8;
+        --blockquoteBackground: #32302F50;
+    }
+}
+
+/* NAVIGATION MENU */
+
+.menu {
+    padding: 0;
+    text-align: center;
+}
+
+.menu li {
+    display: inline-block;
+}
+
+.menu a,
+.menu a:visited {
+    color: var(--nav);
+    text-decoration: none;
+    padding: 5px;
+    font-size: 1em;
+}
+
+.menu a.active {
+    background-color: var(--nav);
+    color: var(--primaryBackground);
+    font-family: 'Atkinson Hyperlegible Next ExtraBold';
+}
+
+hr.nav {
+    border: 1px dashed var(--separatorLine);
+}
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+}
+
+footer a:visited {
+    color: var(--a);
+}
+
+/* GENERAL STUFF */
+
+body {
+    font-size: 1em;
+    font-family: 'Atkinson Hyperlegible Next';
+    background-color: var(--primaryBackground);
+    color: var(--primaryText);
+
+    max-width: 800px;
+    margin: auto;
+    padding: 1em;
+    line-height: 1.5;
+}
+
+hr {
+    border: 1px solid var(--separatorLine);
+}
+
+h1 {
+    color: var(--h1);
+    font-size: 2em;
+}
+
+h2 {
+    color: var(--h2);
+    font-size: 1.8em;
+}
+
+h3 {
+    color: var(--h3);
+    font-size: 1.6em;
+}
+
+h4 {
+    color: var(--h4);
+    font-size: 1.4em;
+}
+
+h5,
+h6 {
+    font-size: 1.2em;
+}
+
+h5 {
+    color: var(--h5)
+}
+
+h6 {
+    color: var(--h6)
+}
+
+blockquote {
+    border-left: 5px solid var(--separatorLine);
+    border-radius: 5px;
+    padding: 3px 1em 3px;
+    background: var(--blockquoteBackground);
+}
+
+a {
+    color: var(--a)
+}
+
+a:visited {
+    color: var(--aVisited)
+}
+
+/* code */
+
+code,
+pre,
+code[class*="language-"],
+pre[class*="language-"] {
+    font-family: 'Atkinson Hyperlegible Mono ExtraLight';
+    font-weight: 600;
+}
+
+pre,
+pre[class*="language-"] {
+    background: var(--preBackground);
+}
+
+pre {
+    color: var(--preText);
+    border-radius: 0.3em;
+    padding: 1em
+}
+
+
+
+/* mark */
+
+mark {
+    background: var(--markBackground);
+    color: var(--primaryText);
+}
+
+/* table */
+
+/*
+table {
+    margin: auto;
+    border-top: 1px solid #666;
+    border-bottom: 1px solid #666;
+}
+
+table thead th {
+    border-bottom: 1px solid #ddd;
+}
+
+th,
+td {
+    padding: 5px;
+}
+
+thead,
+tfoot,
+tr:nth-child(even) {
+    background: #eee;
+}
+*/
+
+/* emoji */
+
+:root {
+    /* custom emoji specific */
+    --emoji-icon-size: 1.5em;
+    --emoji-icon-vertical-align: -0.3em;
+    /* unicode emoji specific */
+    --unicode-emoji-size: 1.2em;
+    --unicode-line-height: 0em;
+}
+
+.unicode-emoji--span {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-size: var(--unicode-emoji-size);
+    line-height: var(--unicode-line-height);
+}
+
+.custom-emoji--span {
+    display: inline-block;
+    position: relative;
+    width: var(--emoji-icon-size);
+    height: var(--emoji-icon-size);
+    vertical-align: var(--emoji-icon-vertical-align);
+}
+
+.custom-emoji--img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+section.footnotes {
+    padding-bottom: 3em;
+    font-size: 0.9em;
+    line-height: 1;
+}
+
+
+/* webrings */
+
+.webrings {
+    text-align: center;
+}
+
+@media(prefers-color-scheme: light) {
+    #noaiDark {
+        visibility: hidden;
+        height: 0;
+    }
+}
+
+@media(prefers-color-scheme: dark) {
+    #noaiLight {
+        visibility: hidden;
+        height: 0;
+    }
+}
+
+/* Guestbook */
+
+.guestbook {
+    height: calc(100vh - 110px);
+}
+
+/* FOUC prevention */
+html {
+    visibility: visible;
+    opacity: 1;
+}
