@@ -116,12 +116,12 @@ export default function (eleventyConfig) {
     });
   });
 
-  const inputFile = './style.css';
+  const inputFile = './styles.css';
   const input = fs.readFileSync(inputFile, 'utf8');
   const output = new CleanCSS().minify(input);
 
-  fs.writeFile('netherpi.net/css/style.css', output.styles, (err) => {
-    if (err) return console.log('Error minifying main.css' + err);
+  fs.writeFile('netherpi.net/css/styles.css', output.styles, (err) => {
+    if (err) return console.log('Error minifying styles.css' + err);
     //success
   });
 };
