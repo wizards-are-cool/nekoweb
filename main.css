@@ -49,7 +49,7 @@
 /* COLOR PALETTE */
 /* Tweaked Gruvbox Palette to be compliant with AAA enhanced ratio.  */
 
-/* light mode */
+/* light mode // fallback */
 :root {
     --primaryBackground: #FBF1C7;
     --primaryText: #282828;
@@ -67,7 +67,6 @@
     --blockquoteBackground: #ebdbb250;
     --preBackground: #1D2021;
     --preText: #f8f8f2
-    
 }
 
 /* dark mode */
@@ -85,35 +84,38 @@
         --h3: #FABD2F;
         --h4: #B8BB26;
         --h5: #5ba7aa;
-        ;
         --h6: #ff9cc8;
         --blockquoteBackground: #32302F50;
     }
 }
 
+* {
+    box-sizing: border-box;
+}
+
 /* NAVIGATION MENU */
 
-.menu {
+ul.menu {
     padding: 0;
     text-align: center;
 }
 
-.menu li {
-    display: inline-block;
-}
-
-.menu a,
-.menu a:visited {
+ul.menu a,
+ul.menu a:visited {
     color: var(--nav);
     text-decoration: none;
     padding: 5px;
-    font-size: 1em;
+    
 }
 
-.menu a.active {
+ul.menu a.active {
     background-color: var(--nav);
     color: var(--primaryBackground);
     font-family: 'Atkinson Hyperlegible Next ExtraBold';
+}
+
+.menu li {
+    display: inline-block;
 }
 
 hr.nav {
@@ -228,15 +230,14 @@ mark {
 
 /* table */
 
-/*
 table {
     margin: auto;
-    border-top: 1px solid #666;
-    border-bottom: 1px solid #666;
+    border-top: 1px solid var(--separatorLine);
+    border-bottom: 1px solid var(--separatorLine);
 }
 
 table thead th {
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid var(--separatorLine);
 }
 
 th,
@@ -247,9 +248,9 @@ td {
 thead,
 tfoot,
 tr:nth-child(even) {
-    background: #eee;
+    background: var(--preBackground);
 }
-*/
+
 
 /* emoji */
 
@@ -291,6 +292,8 @@ section.footnotes {
     line-height: 1;
 }
 
+/* HOME */
+
 /* webrings */
 
 .webrings {
@@ -311,17 +314,27 @@ section.footnotes {
     }
 }
 
+/* statuscafe */
+
+#statuscafe {
+    padding: .5em;
+    background-color: azure;
+    border: 1px solid midnightblue;
+}
+
+#statuscafe-username {
+    margin-bottom: .5em;
+}
+
+#statuscafe-content {
+    margin: 0 1em 0.5em 1em;
+}
+
 /* site buttons */
 
 .siteButtons {
     text-align: center;
     image-rendering: pixelated;
-}
-
-/* Guestbook */
-
-.guestbook {
-    height: calc(100vh - 110px);
 }
 
 /* FOUC prevention */

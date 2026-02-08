@@ -25,7 +25,7 @@ import Image from "@11ty/eleventy-img";
 
 export default function (eleventyConfig) {
   eleventyConfig.setUseGitIgnore(false);
-  eleventyConfig.addWatchTarget("./style.css");
+  eleventyConfig.addWatchTarget("./main.css");
   // Markdown options
   let options = {
     html: true,

@@ -1,5 +1,7 @@
 <!-- FOUC prevention -->
-<style>html{visibility: hidden;opacity:0;}</style>
+<style>
+    html{visibility: hidden;opacity:0;}
+</style>
 
 <!-- metadata for search engines -->
 <meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
@@ -17,6 +19,9 @@
 
 <title>{{ title or 'netherpi.net' }}</title>
 
+
+<link rel="preload" as="style" href="/css/main.css" />
+<link rel="stylesheet" href="/css/main.css" />
 
 {% if hasCode %}
 <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet" />
@@ -36,5 +41,3 @@
 <link rel="preload" href="font/AtkinsonHyperlegibleMono-ExtraLightItalic.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="font/AtkinsonHyperlegibleNext-ExtraBold.woff2" as="font" type="font/woff2" crossorigin>
 
-<link rel="preload" as="style" href="/css/main.css" />
-<link rel="stylesheet" href="/css/main.css" />
