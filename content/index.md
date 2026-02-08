@@ -275,8 +275,6 @@ end test
 
 <div class="webrings">
     {% include 'components/_noai.html' %}
-
     {% include 'components/_tvtime.html' %}
-
     {% include 'components/_ssg.html' %}
 </div>
