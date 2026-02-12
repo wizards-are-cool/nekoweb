@@ -10,11 +10,13 @@ tags: menuItems
 order: 100
 ---
 
-# Home
-
 {% include 'components/_statuscafe.html' %}
 
-Welcome, I'm netherpi. I like to write about technology, video games, and a lot of other things too. I'm currently an engineering student, so I can't update the site that often. ==(Note: this site is for a 14+ audience.)==
+Welcome, I'm netherpi. I like to write about technology, video games, and a lot of other things too. 
+
+I've updated the site <!--# updates --> times. It has <!--# views --> views and <!--# followers --> followers. You can follow me on Nekoweb if you click the button below:
+ 
+<!--# follow -->
 
 ## Recent Posts
 Under Construction

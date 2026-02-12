@@ -10,7 +10,6 @@ tags: menuItems
 order: 300
 ---
 
-# Contact Me
 Feel free to send me corrections, questions, and anything else you think I should know.[^1] Thanks!
 
 ## Preferred Methods

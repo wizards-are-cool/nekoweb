@@ -318,8 +318,8 @@ section.footnotes {
 
 #statuscafe {
     padding: .5em;
-    background-color: azure;
-    border: 1px solid midnightblue;
+    background-color: var(--primaryBackground);
+    border: 1px solid var(--separatorLine);
 }
 
 #statuscafe-username {

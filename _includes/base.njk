@@ -11,6 +11,7 @@
         {% include '_nav.njk' %}
     </nav>
     <main>
+        <h1>{{title}}</h1>
         {% if hasMath %}
             {{ content | latex | safe }}
         {% else %}
