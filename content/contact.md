@@ -14,8 +14,6 @@ Feel free to send me corrections, questions, and anything else you think I shoul
 
 ## Preferred Methods
 - **Email**: contact [at] netherpi [dot] net
-- **Proton Mail**: netherpi
-    - **PGP Key**: `B642B8A024A4EE70C73534844095EAECC384FD1D`
 - **Discord**: @netherpi (DM me or ping me on the Nekoweb's official Discord server)
 
 ## Additional Methods
