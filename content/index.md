@@ -23,14 +23,14 @@ Under Construction
 
 ## Webrings
 <div class="webrings">
-  {% include 'components/_noai.html' %}
   {% include 'components/_tvtime.html' %}
+  {% include 'components/_noai_fl.html' %}
   {% include 'components/_ssg.html' %}
 </div>
 
 ## Site Buttons
 
-These are my old buttons: 
+These are my old buttons (not hotlinking PLEASE): 
 <div class="siteButtons">
   {% include 'components/_oldButtons.html' %}
 </div>
