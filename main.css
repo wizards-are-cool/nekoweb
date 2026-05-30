@@ -343,7 +343,7 @@ html {
     opacity: 1;
 }
 
-#noAi {
+#noai {
     display: flex;
     gap: 6px;
     justify-content: space-around;
