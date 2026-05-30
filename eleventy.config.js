@@ -102,6 +102,8 @@ export default function (eleventyConfig) {
   // SHORTCODES
   eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
 
+  eleventyConfig.addShortcode("age", () => `${new Date().getFullYear() - 2005}`);
+
 
   eleventyConfig.addShortcode("image", async function (src, alt, widths = [300, 600], sizes = "") {
     return Image(src, {

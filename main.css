@@ -1,8 +1,4 @@
-/* nerdfont bc why not */
-@import "https://www.nerdfonts.com/assets/css/webfont.css";
-
 /* FONT FAMILY */
-
 @font-face {
     font-family: 'Atkinson Hyperlegible Next';
     src: url('/font/AtkinsonHyperlegibleNext-Regular.woff2') format('woff2'),
@@ -55,6 +51,7 @@
 /* light mode // fallback */
 :root {
     --primaryBackground: #FBF1C7;
+    --secondaryBackground: #ebdbb2;
     --primaryText: #282828;
     --separatorLine: #928374;
     --nav: #8B2D00;
@@ -76,6 +73,7 @@
 @media(prefers-color-scheme: dark) {
     :root {
         --primaryBackground: #282828;
+        --secondaryBackground: #3c3836;
         --primaryText: #FBF1C7;
         --separatorLine: #403D3C;
         --nav: #ED6A1D;
@@ -155,27 +153,27 @@ hr {
 
 h1 {
     color: var(--h1);
-    font-size: 2em;
+    font-size: 1.8em;
 }
 
 h2 {
     color: var(--h2);
-    font-size: 1.8em;
+    font-size: 1.6em;
 }
 
 h3 {
     color: var(--h3);
-    font-size: 1.6em;
+    font-size: 1.4em;
 }
 
 h4 {
     color: var(--h4);
-    font-size: 1.4em;
+    font-size: 1.2em;
 }
 
 h5,
 h6 {
-    font-size: 1.2em;
+    font-size: 1.1em;
 }
 
 h5 {
@@ -340,16 +338,59 @@ section.footnotes {
     image-rendering: pixelated;
 }
 
-/* FOUC prevention */
-html {
-    visibility: visible;
-    opacity: 1;
-}
+/* webrings */
 
-#noai {
+#noai 
+{
     display: flex;
     gap: 6px;
     justify-content: space-around;
     padding:10px;
     position:relative;  
 }
+
+
+/* idbuttons */
+#idbuttons 
+{
+  display: inline-block;
+  line-height: 0;
+  width: 100%;
+}
+
+img.idbutton  
+{
+    margin: 1px;
+    image-rendering: pixelated;
+    width: 45%;
+    min-width: 45%;
+    margin-left: 3%;
+    margin-right: 1%;
+}
+
+img.idbutton:hover
+{
+    transform: scale(1.05);
+}
+
+.card
+{
+    display: block;
+    padding: 4px;
+    margin: 5px;
+    border: 1px solid var(--separatorLine);
+}
+
+img.hover:hover
+{
+    transform: scale(1.5);
+    transition: 0.2s ease-out;
+}
+
+/* FOUC prevention */
+html 
+{
+    visibility: visible;
+    opacity: 1;
+}
+

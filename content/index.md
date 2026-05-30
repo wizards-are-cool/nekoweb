@@ -5,6 +5,7 @@ permalink: "/"
 isHome: true
 hasCode: false
 hasMath: false
+hasIcons: false
 noSEO: false
 tags: menuItems
 order: 100

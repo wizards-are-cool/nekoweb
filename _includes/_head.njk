@@ -24,11 +24,15 @@
 <link rel="stylesheet" href="/css/main.css" />
 
 {% if hasCode %}
-<link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet" />
+<link rel="stylesheet" href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" />
 {% endif %}
 {% if hasMath %}
 <link rel="stylesheet" href="https://unpkg.com/katex@latest/dist/katex.min.css" />
 {% endif %}
+{% if hasIcons %}
+<link rel="stylesheet" href="https://www.nerdfonts.com/assets/css/webfont.css" />
+{% endif %}
+
 
 {% if isHome %}
 <link rel="stylesheet" href="https://thegreenroom.neocities.org/webrings/tvtimewebring/onionring.css" />
@@ -40,4 +44,3 @@
 <link rel="preload" href="font/AtkinsonHyperlegibleMono-ExtraLight.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="font/AtkinsonHyperlegibleMono-ExtraLightItalic.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="font/AtkinsonHyperlegibleNext-ExtraBold.woff2" as="font" type="font/woff2" crossorigin>
-
