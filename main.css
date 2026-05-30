@@ -347,7 +347,6 @@ html {
     display: flex;
     gap: 6px;
     justify-content: space-around;
-            padding:10px;
-        position:relative;  
-
+    padding:10px;
+    position:relative;  
 }
