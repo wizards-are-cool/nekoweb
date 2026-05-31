@@ -26,7 +26,7 @@ import { feedPlugin } from "@11ty/eleventy-plugin-rss";
 
 export default function (eleventyConfig) {
   eleventyConfig.setUseGitIgnore(false);
-  eleventyConfig.addWatchTarget("./main1.css");
+  eleventyConfig.addWatchTarget("./main2.css");
   // Markdown options
   let options = {
     html: true,
@@ -121,11 +121,11 @@ export default function (eleventyConfig) {
     });
   });
   
-  const inputFile = './main1.css';
+  const inputFile = './main2.css';
   const input = fs.readFileSync(inputFile, 'utf8');
   const output = new CleanCSS().minify(input);
 
-  fs.writeFile('netherpi.net/css/main1.css', output.styles, (err) => {
+  fs.writeFile('netherpi.net/css/main2.css', output.styles, (err) => {
     if (err) return console.log('Error minifying main.css' + err);
     //success
   });
