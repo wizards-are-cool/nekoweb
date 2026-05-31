@@ -3,7 +3,7 @@
     <li><a href="{{ item.data.permalink }}" {% if page.url==item.url %} aria-current="page" class="active" {% endif
             %}>{{ item.data.title | slugify }}</a></li>
     {% endfor %}
-    <li><a href="https://guestbook.netherpi.net">guestbook</a></li>
+    <li><a href="https://guestbook.netherpi.net" target="_self">guestbook</a></li>
     <li><a href="/feed.xml">rss</a></li>
     <hr class="nav" />
 </ul>
