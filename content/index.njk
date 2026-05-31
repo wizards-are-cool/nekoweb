@@ -34,20 +34,27 @@ order: 100
     </section>
 
     <section class="card">
+       <!--# follow -->
+    </section>
+
+    <section class="card">
       <h1>My Button</h1>
       Feel free to hotlink my button (let me know if you add my button to your site!):
-      <div style="text-align: center;"><a href="https://netherpi.net" target="_self"><img src="asset/img/button/netherpi.gif"  loading="lazy"
-decoding="async" style="image-rendering: pixelated;"></a><textarea><a href="https://netherpi.net" target="_self"><img src="asset/img/button/netherpi.gif"  loading="lazy"
-decoding="async" style="image-rendering: pixelated;"></a></textarea></div>
+      <div style="text-align: center;"><a href="https://netherpi.net" target="_blank"><img
+            alt="netherpi.net" src="asset/img/button/netherpi.gif" loading="lazy" decoding="async" width="88" height="31" style="image-rendering: pixelated;"></a>
+        <textarea>&lt;a href=&#34;https://netherpi.net" target="_blank"&gt;&lt;img src="asset/img/button/netherpi.gif" loading="lazy" decoding="async" style=&#34;image-rendering: pixelated;" width="88" height="31" alt="netherpi.net"&gt;&lt;/a&gt;</textarea>
+      </div>
     </section>
 
     <section class="card">
       <h1>My Neighbors</h1>
+      If you want to be added, follow me on Nekoweb or add my button. 
+      <br>
       {% include 'components/_myNeighbors.html' %}
     </section>
 
     <section class="card">
-      <h1>Now Scrobbling</h1>
+      <h1>Now Listening</h1>
       {% include 'components/_lastfm.html' %}
     </section>
   </aside>
