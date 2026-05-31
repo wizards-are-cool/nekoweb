@@ -50,28 +50,54 @@
 
 /* light mode // fallback */
 :root {
-    --primaryBackground: #FBF1C7;
+
+    --red: #CB2922;
+    --dark-orange: #8B2D00;
+    --orange: #AF3A03;
+    --yellow: #B57614;
+    --green: #79740E;
+    --blue: #076678;
+    --purple: #8F3F71;
+    --gray: #928374;
+    --fg0: #282828;
+    --bg: #fbf1c7;
+    --bg0_h: #f9f5d7;
+
+    --primaryBackground: var(--bg);
     --secondaryBackground: #ebdbb2;
-    --primaryText: #282828;
-    --separatorLine: #928374;
-    --nav: #8B2D00;
-    --a: #076678;
+    --primaryText: var(--fg0);
+    --separatorLine: var(--gray);
+    --nav: var(--dark-orange);
+    --a: var(--blue);
     --aVisited: #7E3663;
     --markBackground: #FABD2F50;
-    --h1: #CB2922;
-    --h2: #AF3A03;
-    --h3: #B57614;
-    --h4: #79740E;
-    --h5: #076678;
-    --h6: #8F3F71;
+    --marker: var(--dark-orange);
+    --h1: var(--red);
+    --h2: var(--orange);
+    --h3: var(--yellow);
+    --h4: var(--green);
+    --h5: var(--blue);
+    --h6: var(--purple);
     --blockquoteBackground: #ebdbb250;
     --preBackground: #1D2021;
-    --preText: #f8f8f2
+    --preText: #f8f8f2;
+    --tdEvenBackground: #ebdbb2;
 }
 
 /* dark mode */
 @media(prefers-color-scheme: dark) {
     :root {
+        --red: #FF5946;
+        --orange: #ED6A1D;
+        --yellow: #B57614;
+        --green: #B8BB26;
+        --blue: #076678;
+        --purple: #8F3F71;
+        --gray: #928374;
+        --fg0: #282828;
+        --bg: #fbf1c7;
+        --bg0_h: #f9f5d7;
+
         --primaryBackground: #282828;
         --secondaryBackground: #3c3836;
         --primaryText: #FBF1C7;
@@ -80,13 +106,16 @@
         --a: #9bf9ff;
         --aVisited: #ff9cc8;
         --markBackground: #B5761450;
-        --h1: #FF5946;
-        --h2: #ED6A1D;
+        --h1: var(--red);
+        --h2: var(--orange);
         --h3: #FABD2F;
-        --h4: #B8BB26;
+        --h4: var(--green);
         --h5: #5ba7aa;
         --h6: #ff9cc8;
+        --marker: var(--green);
+
         --blockquoteBackground: #32302F50;
+        --tdEvenBackground: #32302F;
     }
 }
 
@@ -94,11 +123,32 @@
     box-sizing: border-box;
 }
 
+/* HEADER */
+
+#top-bar {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 1rem;
+}
+
+header {
+    font-family: 'Atkinson Hyperlegible Next ExtraBold';
+    width: 50%;
+    font-size: 2em;
+    color: var(--orange);
+
+}
+
 /* NAVIGATION MENU */
+nav {
+    width: 50%;
+    display: flex;
+    justify-content: right;
+}
 
 ul.menu {
     padding: 0;
-    text-align: center;
+    text-align: right;
 }
 
 ul.menu a,
@@ -106,7 +156,7 @@ ul.menu a:visited {
     color: var(--nav);
     text-decoration: none;
     padding: 5px;
-    
+
 }
 
 ul.menu a.active {
@@ -119,7 +169,7 @@ ul.menu a.active {
     display: inline-block;
 }
 
-hr.nav {
+hr {
     border: 1px dashed var(--separatorLine);
 }
 
@@ -141,17 +191,14 @@ body {
     background-color: var(--primaryBackground);
     color: var(--primaryText);
 
-    max-width: 800px;
+    max-width: 1000px;
     margin: auto;
     padding: 1em;
     line-height: 1.5;
 }
 
-hr {
-    border: 1px solid var(--separatorLine);
-}
-
 h1 {
+    margin: 1em;
     color: var(--h1);
     font-size: 1.8em;
 }
@@ -197,6 +244,12 @@ a {
 
 a:visited {
     color: var(--aVisited)
+}
+
+/* lists */
+
+::marker {
+    color: var(--marker);
 }
 
 /* code */
@@ -249,8 +302,9 @@ td {
 thead,
 tfoot,
 tr:nth-child(even) {
-    background: var(--preBackground);
+    background: var(--tdEvenBackground);
 }
+
 
 
 /* emoji */
@@ -320,7 +374,6 @@ section.footnotes {
 #statuscafe {
     padding: .5em;
     background-color: var(--primaryBackground);
-    border: 1px solid var(--separatorLine);
 }
 
 #statuscafe-username {
@@ -340,26 +393,23 @@ section.footnotes {
 
 /* webrings */
 
-#noai 
-{
+#noai {
     display: flex;
     gap: 6px;
     justify-content: space-around;
-    padding:10px;
-    position:relative;  
+    padding: 10px;
+    position: relative;
 }
 
 
 /* idbuttons */
-#idbuttons 
-{
-  display: inline-block;
-  line-height: 0;
-  width: 100%;
+#idbuttons {
+    display: inline-block;
+    line-height: 0;
+    width: 100%;
 }
 
-img.idbutton  
-{
+img.idbutton {
     margin: 1px;
     image-rendering: pixelated;
     width: 45%;
@@ -368,29 +418,83 @@ img.idbutton
     margin-right: 1%;
 }
 
-img.idbutton:hover
-{
+img.idbutton:hover {
     transform: scale(1.05);
 }
 
-.card
-{
+.card {
     display: block;
     padding: 4px;
     margin: 5px;
     border: 1px solid var(--separatorLine);
 }
 
-img.hover:hover
-{
+img.hover:hover {
     transform: scale(1.5);
     transition: 0.2s ease-out;
 }
 
-/* FOUC prevention */
-html 
+.side-by-side {
+    display: flex;
+}
+
+#home {
+    display: grid;
+    grid-template-columns: 7fr 3fr;
+}
+
+.posts {
+    grid-column: 1;
+}
+
+.sidebar {
+    grid-column: 2;
+}
+
+section.card {
+    border-radius: 10px;
+    padding: 0.25em 0.5em 0.25em 0.5em;
+    margin: 1rem;
+}
+
+section.card h1 
 {
+    color: var(--h4);
+    font-size: 1.2em;
+    margin: 0.25em auto 0.25em auto;
+}
+
+@media (max-width: 700px) {
+    header {
+        font-size: 0.9em;
+    }
+
+    .side-by-side {
+        display: block;
+    }
+
+    #home {
+        display: block;
+    }
+}
+
+@media (prefers-color-scheme: dark)
+{
+    .light
+    {
+        display: none;
+    }
+}
+
+@media (prefers-color-scheme: light)
+{
+    .dark
+    {
+        display: none;
+    }
+}
+/* FOUC prevention */
+html {
     visibility: visible;
     opacity: 1;
 }
-

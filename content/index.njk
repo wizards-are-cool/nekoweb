@@ -1,0 +1,54 @@
+---
+layout: base.njk
+title: "Home"
+permalink: "/"
+isHome: true
+hasCode: false
+hasMath: false
+hasTitle: false
+noSEO: false
+tags: menuItems
+order: 100
+---
+<div id="home">
+  <div class="posts">
+    <h1>Recent Posts</h1>
+    <p>
+      {% include "components/_postlist.njk" %}
+    </p>
+  </div>
+  <aside class="sidebar" aria-label="sidebar">
+
+    <section class="card">
+      <h1>Current Status</h1>
+      {% include 'components/_statuscafe.html' %}
+    </section>
+
+    <section class="card">
+      <h1>Webrings</h1>
+      <div class="webrings">
+        {% include 'components/_tvtime.html' %}
+        {% include 'components/_noai_fl.html' %}
+        {% include 'components/_ssg.html' %}
+      </div>
+    </section>
+
+    <section class="card">
+      <h1>My Button</h1>
+      Feel free to hotlink my button (let me know if you add my button to your site!):
+      <div style="text-align: center;"><a href="https://netherpi.net" target="_self"><img src="asset/img/button/netherpi.gif"  loading="lazy"
+decoding="async" style="image-rendering: pixelated;"></a><textarea><a href="https://netherpi.net" target="_self"><img src="asset/img/button/netherpi.gif"  loading="lazy"
+decoding="async" style="image-rendering: pixelated;"></a></textarea></div>
+    </section>
+
+    <section class="card">
+      <h1>My Neighbors</h1>
+      {% include 'components/_myNeighbors.html' %}
+    </section>
+
+    <section class="card">
+      <h1>Now Scrobbling</h1>
+      {% include 'components/_lastfm.html' %}
+    </section>
+  </aside>
+</div>

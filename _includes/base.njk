@@ -7,18 +7,23 @@
 <body>
     <!-- prevent the dreaded FOUC in firefox -->
     <script>0</script>
-    <nav>
-        {% include '_nav.njk' %}
-    </nav>
+    <div id="top-bar">
+        <header>:] netherpi.net</header>
+        <nav>
+            {% include '_nav.njk' %}
+     </nav>
+    </div>
+        <hr/>
+
     <main>
-        <h1>{{title}}</h1>
+        {% if hasTitle %}<h1>{{title}}</h1>{% endif %}
         {% if hasMath %}
             {{ content | latex | safe }}
         {% else %}
             {{content | safe }}
         {% endif %}    
     </main>
-    <hr class="nav"/>
+    <hr/>
         <footer role="contentinfo">
             {% include '_footer.njk' %}
         </footer>

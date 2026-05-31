@@ -4,7 +4,7 @@ title: "About Me"
 permalink: "/about/"
 hasCode: false
 hasMath: false
-hasIcons: false
+hasTitle: true
 isHome: false
 noSEO: true
 tags: menuItems
@@ -12,9 +12,9 @@ order: 300
 ---
 
 
-<div style="display: flex;">
-<div style="display: block; padding: 3px; width:140em">
-<p>Hello, I'm <strong>netherpi</strong> aka Neil <a href="https://en.pronouns.page/@netherpi"><small>(he/him)</small></a>. I'm a ~{% age %} Korean trans man from the United States currently going to college for computer engineering. I am a huge freak for anything cool and independent, so that's why I am a part of the indie-web. I enjoy minimalist web design and the Gruvbox color palette. Everything I know about front-end development is entirely self-taught, and I'm still learning. <mark>Please let me know if you have issues navigating my site, especially if you're using a screen reader!</mark> 
+<div class="side-by-side">
+<div>
+<p>Hello, I'm <strong>netherpi</strong> aka Neil <a href="https://en.pronouns.page/@netherpi"><small>(he/him)</small></a>. I'm a ~{% age %} Korean trans man from the United States currently going to college for computer engineering. I am a huge freak for anything cool and independent, so that's why I am a part of the indie-web. I enjoy minimalist web design and the Gruvbox color palette. Everything I know about front-end development is entirely self-taught, and I'm still learning. <mark>Please let me know if you have issues navigating my site, especially if you're using a screen reader!</mark>
 </p>
 </div>
 
@@ -42,7 +42,7 @@ order: 300
 -  **Favorite Pokemon**: Blazekin
 
 ### My Specs
-<div style="display:flex">
+<div class="side-by-side">
     <div class="card">
         <h4>Laptop</h4>
         <table>
